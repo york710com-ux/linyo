@@ -1,0 +1,119 @@
+:root {
+    --primary-color: #6c7177;
+    --text-color: #333333;
+    --accent-color: #ff6b6b;
+    --transition-speed: 0.3s;
+}
+
+body {
+    background-color: #cacaca !important;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.welcome-banner {
+    background-color: transparent; 
+    text-align: center;         
+    padding: 60px 20px;         
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.custom-title {
+    font-size: 32px; 
+    font-weight: 700;
+    color: #222;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.custom-subtitle {
+    font-size: 18px;
+    color: #a39b9b;
+    font-weight: 300;
+}
+
+.card.shadow-sm {
+    border: none !important; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15) !important; 
+    background-color: #ffffff;
+    border-radius: 10px;
+    transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+}
+
+.card.shadow-sm:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25) !important;
+}
+
+.card-body {
+    padding: 25px;
+}
+
+.card-title {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: var(--primary-color);
+}
+
+.custom-btn {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 50px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color var(--transition-speed), transform 0.1s;
+}
+
+.custom-btn:hover {
+    background-color: #357abd;
+    color: #fff;
+}
+
+.custom-btn:active {
+    transform: scale(0.98);
+}
+
+.custom-footer {
+    background-color: #222;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 14px;
+}
+
+@media (max-width: 767.98px) {
+    .welcome-banner {
+        padding: 40px 15px;
+    }
+    
+    .custom-title {
+        font-size: 24px;
+    }
+    
+    .card.shadow-sm {
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .welcome-banner {
+        padding: 50px 20px;
+    }
+    
+    .custom-title {
+        font-size: 28px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 1140px;
+        margin: 0 auto;
+    }
+}
