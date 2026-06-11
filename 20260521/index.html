@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>祐旅行社</title>
+    <link rel="shortcut icon" href="img/images.png" type="image/x-icon">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft JhengHei", sans-serif;
+        }
+
+
+        .navbar {
+            background-color: #333;
+            padding: 15px 5%;
+
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: #fff;
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .nav-menu {
+
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-item {
+            margin-left: 20px;
+        }
+
+        .nav-link {
+            color: #ccc;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: #fff;
+        }
+
+
+        .hero-section {
+            padding: 60px 5%;
+            background-color: transparent;
+            min-height: 70vh;
+
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .hero-content {
+            flex: 1;
+            padding-right: 40px;
+        }
+
+        .hero-title {
+            font-size: 48px;
+            color: #222;
+            margin-bottom: 20px;
+        }
+
+        .hero-description {
+            font-size: 18px;
+            color: #666;
+            line-height: 1.8;
+        }
+
+        .hero-image {
+            flex: 1;
+
+            display: flex;
+            justify-content: center;
+        }
+
+        .hero-image img {
+            width: 100%;
+            max-width: 550px;
+            border-radius: 12px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+
+        .destinations-section {
+            padding: 60px 5% 80px 5%;
+            background-color: transparent;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 32px;
+            color: #222;
+            margin-bottom: 40px;
+        }
+
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: flex-start;
+        }
+
+        .card {
+            width: calc((100% - 60px) / 3);
+            background-color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            transition: box-shadow 0.3s ease;
+
+
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card:hover {
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            padding: 20px;
+            flex-grow: 1;
+
+
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-title {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 12px;
+        }
+
+        .card-text {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+
+        .card-btn {
+            display: block;
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 12px 0;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 25px 0;
+            font-size: 14px;
+            letter-spacing: 1px;
+        }
+
+
+        @media (max-width: 1024px) {
+            .card {
+                width: calc((100% - 30px) / 2);
+            }
+        }
+
+        @media (max-width: 768px) {
+
+            /* 主視覺區 RWD */
+            .hero-section {
+                /* 【技術要求應用】 */
+                flex-direction: column;
+                text-align: center;
+                padding: 40px 5%;
+            }
+
+            .hero-content {
+                padding-right: 0;
+                margin-bottom: 30px;
+            }
+
+            .hero-title {
+                font-size: 32px;
+            }
+
+            .card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <nav class="navbar">
+        <a href="#" class="logo">祐旅行社</a>
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="#" class="nav-link">首頁</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">目的地</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">關於我們</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">聯絡我們</a></li>
+        </ul>
+    </nav>
+
+
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title">韓國好玩</h1>
+            <p class="hero-description">
+                祐旅行社只帶年輕人出國,不帶老年團
+            </p>
+        </div>
+        <div class="hero-image">
+            <img src="img/Flag_of_South_Korea.svg" alt="韓國">
+        </div>
+    </section>
+
+
+    <section class="destinations-section">
+        <h2 class="section-title">年輕人景點</h2>
+
+        <div class="card-container">
+
+
+            <div class="card">
+                <img src="img/45677a45761104ed-8dce1c268ec7600-25b1b8.avif" alt="景福宮" class="card-img">
+                <div class="card-body">
+                    <h3 class="card-title">景福宮</h3>
+                    <p class="card-text">作為韓國最具代表性的皇室宮殿，優美的建築充滿時代的威儀，
+                        因此吸引少不了知名韓劇前往取景拍攝，例如《大長今》、《屋塔房王世子》，也讓遊客開心換上傳統韓服，體驗時光穿梭的樂趣。</p>
+                    <a href="#" class="card-btn">看看唄</a>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="img/9e889fbf62986033-8dce1c3195a7a00-7479b.avif" alt="南山公園" class="card-img">
+                <div class="card-body">
+                    <h3 class="card-title">南山公園</h3>
+                    <p class="card-text">欣賞南山公園內最知名的首爾塔、愛情鎖牆等，如果選擇在夜晚暢遊，還可以將首爾市區的美景盡收眼底，宛如置身在韓劇浪漫的場景之中。</p>
+                    <a href="#" class="card-btn">看看唄</a>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="img/32aefeedb9c5bec0-8dce1c3c2a17000-8b3b0.avif" alt="樂天世界塔118樓觀景台 Seoul Sky"
+                    class="card-img">
+                <div class="card-body">
+                    <h3 class="card-title">樂天世界塔118樓觀景台 Seoul Sky</h3>
+                    <p class="card-text">樂天世界塔是韓國目前最高的建築物，截至2022年為止名列為世界第7高樓，是首爾地區必訪的景點之一。當你登上118樓觀景台，一定要挑戰全球最高、
+                        距離地面478公尺的透明地板景觀台，感受騰空般的刺激快感，以及360度0死角的視野，完美俯瞰首爾的繁華美景。</p>
+                    <a href="#" class="card-btn">看看唄</a>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="img/51434dc12b743f0a-8dce1c51791b600-93c45.avif" alt="北村韓屋村" class="card-img">
+                <div class="card-body">
+                    <h3 class="card-title">北村韓屋村</h3>
+                    <p class="card-text">北村韓屋村過去是朝鮮貴族的居住地，它在2009年榮獲「亞太區文物古蹟保護獎」的傑出項目獎。一腳踏入蜿蜒狹窄的巷弄，時間彷彿回到百年前的韓國，
+                        獨有的文化精髓和清幽貴氣的韓屋圍繞著四周，與繁華現代的首爾都市呈現強烈的對比，令人由衷讚嘆歷史的軌跡，值得你我細心體會。</p>
+                    <a href="#" class="card-btn">看看唄</a>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="img/c950eab4a31a0fd1-8dce1c53a23cf00-7ae6a.avif" alt="恩平韓屋村" class="card-img">
+                <div class="card-body">
+                    <h3 class="card-title">恩平韓屋村</h3>
+                    <p class="card-text">全球年輕人一生必去一次的世界級沙灘電音電音盛宴，燃燒青春與來自各國的朋友瘋狂一整夜。</p>
+                    <a href="#" class="card-btn">看看唄</a>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="img/269117aaf5dc9a29-8dce1c587a03c00-8a5ea.avif" alt="青瓦台" class="card-img">
+                <div class="card-body">
+                    <h3 class="card-title">青瓦台</h3>
+                    <p class="card-text">
+                        青瓦台自大韓民國1948年獨立之後，皆作為總統辦公室和接見重要外賓的場所，直到2022年總統府搬遷後開放，世人終能一窺青瓦台神祕的真面目。青瓦臺本館的屋頂，由15萬片青瓦堆砌而成，
+                        與背後綠意盎然的山景相互輝映，散發莊嚴靜穆之美。如果你對韓國近代政治的更迭感興趣，非常推薦來青瓦台走一遭。</p>
+                    <a href="#" class="card-btn">看看唄</a>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="img/3b13c9a2fffcdbdc-8dce1c716fa1f00-8c423.avif" alt="德壽宮" class="card-img">
+                <div class="card-body">
+                    <h3 class="card-title">德壽宮</h3>
+                    <p class="card-text">德壽宮是首爾五大宮之一，更是秋季賞楓葉和賞銀杏的著名勝地，有別於其他韓式宮殿，德壽宮是唯一擁有近代與西式建築融合唯一的古蹟。
+                        而旁邊的德壽宮石牆路非常具有特別，坐擁「韓國最美街道」的美譽，再加上熱門韓劇《鬼怪》的取景加持之下，成為年輕旅人必訪的打卡景點。</p>
+                    <a href="#" class="card-btn">看看唄</a>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="img/5dfcca20a86de135-8dce1cb051a7b00-6a44b.avif" alt="三清洞" class="card-img">
+                <div class="card-body">
+                    <h3 class="card-title">三清洞</h3>
+                    <p class="card-text">
+                        三清洞的名字源自於「山清、水清、人清」的典故，據說此地區是首爾最好的風水寶地，而且自古以來就是豪門名流的居住區域。然而今天三清洞保留了許多洋溢著濃厚歷史氣息的韓屋建築，近年來越來越多的文創特色店鋪、咖啡廳進駐於此，街道上充滿高雅的文藝氣息，還有高人氣韓劇《鬼怪》的取景。
+                    </p>
+                    <a href="#" class="card-btn">看看唄</a>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="img/386df5daa1b151a4-8dce1cb98ec4700-43e09.avif" alt="汗蒸幕體驗" class="card-img">
+                <div class="card-body">
+                    <h3 class="card-title">汗蒸幕體驗</h3>
+                    <p class="card-text">
+                        汗蒸幕是韓國的傳統浴場，提供多種桑拿服務和淋浴休憩設施，藉由流汗的方式排解體內毒素，有效促進血液循環和新陳代謝。汗蒸幕最特別的地方不只是在健康設施服務，還包含休閒娛樂和飲食部，有些甚至能夠過夜休息一晚，是旅遊韓國最值得嘗試的文化體驗。
+                    </p>
+                    <a href="#" class="card-btn">看看唄</a>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="img/53fadc3c74669fdf-8dce1cbb3262500-68804.avif" alt="塗鴉秀" class="card-img">
+                <div class="card-body">
+                    <h3 class="card-title">塗鴉秀</h3>
+                    <p class="card-text">
+                        韓國連續3年榮選節目觀看人數第1的塗鴉秀，是一種跳脫語言表演的形式，以聲光音效、舞蹈、現場塗鴉技巧與成員間逗趣的互動串連，融合成一場宛如魔術般的戲劇化美術演出。整個過程充滿了緊張、刺激與驚喜，帶給觀眾十足的感動與歡笑。
+                    </p>
+                    <a href="#" class="card-btn">看看唄</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        ©2026祐旅行社
+    </footer>
+
+</body>
+
+</html>
